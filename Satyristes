@@ -3,7 +3,7 @@
 
 (library
   (name "fonts-noto-emoji")
-  (version "1.0.0")
+  (version "1.0.1")
   (sources
     ((hash "fonts.satysfi-hash" "fonts.satysfi-hash")
      (font "NotoEmoji-Regular.ttf" "noto-emoji/NotoEmoji-Regular.ttf")
@@ -12,3 +12,14 @@
   (opam "satysfi-fonts-noto-emoji.opam")
   (dependencies ())
   (compatibility ((satyrographos "0.0.1"))))
+
+(libraryDoc
+  (name "fonts-noto-emoji-doc")
+  (version "1.0.1")
+  (build
+    ((satysfi "doc-fonts-noto-emoji.saty" "-o" "doc-fonts-noto-emoji.pdf")))
+  (sources
+    ((doc "doc-fonts-emoji-serif.pdf" "./doc-fonts-noto-emoji.pdf")))
+  (opam "satysfi-fonts-noto-emoji-doc.opam")
+  (dependencies ((base ())
+                 (fonts-noto-emoji ()))))

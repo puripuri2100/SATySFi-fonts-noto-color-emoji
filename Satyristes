@@ -1,0 +1,14 @@
+;; For Satyrographos 0.0.2 series
+(version 0.0.2)
+
+(library
+  (name "fonts-noto-emoji")
+  (version "1.0.0")
+  (sources
+    ((hash "fonts.satysfi-hash" "fonts.satysfi-hash")
+     (font "NotoEmoji-Regular.ttf" "noto-emoji/NotoEmoji-Regular.ttf")
+     (font "NotoColorEmoji.ttf" "noto-color-emoji/NotoColorEmoji.ttf")
+     ))
+  (opam "satysfi-fonts-noto-emoji.opam")
+  (dependencies ())
+  (compatibility ((satyrographos "0.0.1"))))

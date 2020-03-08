@@ -1,0 +1,4 @@
+{
+  "fonts-noto-emoji:NotoEmoji-Regular" : <Single: {"src": "dist/fonts/fonts-noto-emoji/NotoEmoji-Regular.ttf"}>,
+  "fonts-noto-emoji:NotoColorEmoji" : <Single: {"src": "dist/fonts/fonts-noto-emoji/NotoColorEmoji.ttf"}>
+}

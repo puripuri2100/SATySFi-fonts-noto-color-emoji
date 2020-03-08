@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "satysfi-fonts-noto-emoji"
-version: "0.1.0"
+version: "1.0.0"
 synopsis: "SATySFi Font Package for Noto Emoji fonts"
 description: """
 SATySFi font package for Noto Emoji fonts.

@@ -33,6 +33,6 @@ satyrographos install
 
 ---
 
-This software released under [the MIT license](https://github.com/puripuri2100/SATySFi-fonts-noto-emoji/blob/master/LICENSE).
+This software released under OFL1-1 license.
 
 Copyright (c) 2020 Naoki Kaneko (a.k.a. "puripuri2100")

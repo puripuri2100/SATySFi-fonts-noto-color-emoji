@@ -3,7 +3,7 @@
 
 (library
   (name "fonts-noto-emoji")
-  (version "1.05.1+uh")
+  (version "1.05+uh+2")
   (sources
     ((hash "fonts.satysfi-hash" "fonts.satysfi-hash")
      (font "NotoEmoji-Regular.ttf" "noto-emoji/NotoEmoji-Regular.ttf")

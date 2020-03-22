@@ -1,6 +1,6 @@
 opam-version: "2.0"
 name: "satysfi-fonts-noto-emoji"
-version: "1.05+uh"
+version: "1.05.1+uh"
 synopsis: "SATySFi Font Package for Noto Emoji fonts"
 description: """
 SATySFi font package for Noto Emoji fonts.
@@ -16,26 +16,20 @@ bug-reports: "https://github.com/puripuri2100/SATySFi-fonts-noto-emoji/issues"
 dev-repo: "git+https://github.com/puripuri2100/SATySFi-fonts-noto-emoji.git"
 
 
-extra-source "NotoEmoji-unhinted.zip" {
-  archive: "https://noto-website-2.storage.googleapis.com/pkgs/NotoEmoji-unhinted.zip"
+extra-source "noto-emoji-2019-11-19-unicode12.zip" {
+  archive: "https://github.com/googlefonts/noto-emoji/archive/v2019-11-19-unicode12.zip"
   checksum: [
-    "sha256=61f6a71a8e84b57f52b2255ee8bb6e0bf14515ff7c453485f11f497d9cdc5d78"
+    "sha256=9751a3889df1d52ede600f66661e0a3ef105cb520180ca846adcdf37db7a6d84"
   ]
 }
 
-extra-source "NotoColorEmoji-unhinted.zip" {
-  archive: "https://noto-website-2.storage.googleapis.com/pkgs/NotoColorEmoji-unhinted.zip"
-  checksum: [
-    "sha256=d7983299f53742592f61539607c5d9528bcc83639f9a99df94a22c0df4890355"
-  ]
-}
 
 depends: [
   "satysfi" {>= "0.0.3" & < "0.0.5"}
   "satyrographos" {>= "0.0.2" & < "0.0.4"}
 ]
 build: [
-  ["unzip" "-j" "-d" "noto-emoji" "-o" "NotoEmoji-unhinted.zip" "*.ttf"]["unzip" "-j" "-d" "noto-color-emoji" "-o" "NotoColorEmoji-unhinted.zip" "*.ttf"]
+  ["unzip" "-j" "-d" "noto-emoji" "-o" "noto-emoji-2019-11-19-unicode12.zip" "*.ttf"]
 ]
 install: [
   ["satyrographos" "opam" "install"
